@@ -1,0 +1,103 @@
+:root {
+	--orange: hsl(31, 77%, 52%);
+	--cyan: hsl(184, 100%, 22%);
+	--dark-cyan: hsl(179, 100%, 13%);
+	--t-white: hsla(0, 0%, 100%, 0.75);
+	--light-gray: hsl(0, 0%, 95%);
+	--lexend: "Lexend Deca", sans-serif;
+	--shoulders: "Big Shoulders Display", cursive;
+}
+
+body {
+	background: var(--light-gray);
+	font-size: 15px;
+	font-family: var(--lexend);
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5.5rem 1rem;
+}
+
+.cards-group {
+	color: var(--light-gray);
+	border-radius: 0.5rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	padding: 3rem;
+	max-width: 230px;
+}
+
+.card p {
+	color: var(--t-white);
+	line-height: 1.65;
+}
+
+.card h2 {
+	font-family: var(--shoulders);
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin-top: 32px;
+	margin-bottom: 25px;
+}
+
+.card button {
+	background-color: var(--light-gray);
+	border-radius: 2rem;
+	padding: 0.9rem 1.9rem;
+	font-weight: 600;
+	margin-top: 0.7rem;
+	font-size: 1rem;
+	border: 2px solid var(--light-gray);
+	cursor: pointer;
+	transition: color 100ms ease, background-color 100ms ease;
+}
+
+.card:first-child {
+	background-color: var(--orange);
+}
+.card:first-child button {
+	color: var(--orange);
+}
+
+.card:nth-child(2) {
+	background-color: var(--cyan);
+}
+.card:nth-child(2) button {
+	color: var(--cyan);
+}
+
+.card:nth-child(3) {
+	background-color: var(--dark-cyan);
+}
+.card:nth-child(3) button {
+	color: var(--dark-cyan);
+}
+.card button:hover {
+	background-color: transparent;
+	color: var(--light-gray);
+}
+
+footer {
+	text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+	.cards-group {
+		flex-direction: row;
+	}
+	.card {
+		max-width: 210px;
+	}
+
+	.card button {
+		margin-top: 4rem;
+	}
+}
