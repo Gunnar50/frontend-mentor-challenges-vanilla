@@ -1,0 +1,9 @@
+// Mixings
+@mixin font($size, $weight: 400) {
+	font-size: $size;
+	font-weight: $weight;
+}
+
+@mixin card-border($color) {
+	border-top: 4px solid $color;
+}
