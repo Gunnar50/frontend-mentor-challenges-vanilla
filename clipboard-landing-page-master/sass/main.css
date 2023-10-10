@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/alegreyasc-bold-webfont.woff2") format("woff2"), url("/fonts/alegreyasc-bold-webfont.woff") format("woff");
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+a {
+  color: initial;
+}
+
+a:is(:hover, :focus) {
+  color: initial;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+header picture {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+header picture img {
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem;
+  text-align: center;
+  height: 100vh;
+  top: 0;
+}
+.header .logo {
+  margin-bottom: 6rem;
+}
+.header p {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+main {
+  margin-top: 100vh;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1607843137);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1607843137);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 5px -4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: hsl(171, 66%, 44%);
+}
+
+.btn-secondary {
+  background: hsl(233, 100%, 69%);
+}/*# sourceMappingURL=main.css.map */

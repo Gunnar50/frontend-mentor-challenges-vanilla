@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+
+[class*="btn-"] {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	display: inline-block;
+	text-decoration: none;
+
+	// custom properties
+	font-weight: 600;
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 20px;
+	border-radius: 50px;
+	border-top: 1px solid #00000029;
+	border-bottom: 3px solid #00000029;
+	box-shadow: 0 4px 5px -4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+	--bg-color: #{$button-primary};
+	--text-color: #{$button-text-primary};
+	&:hover,
+	&:focus {
+		--bg-color: #{$button-hover-primary};
+		--text-color: #{$button-hover-text-primary};
+	}
+}
+
+.btn-secondary {
+	--bg-color: #{$button-secondary};
+	--text-color: #{$button-text-secondary};
+	&:hover,
+	&:focus {
+		--bg-color: #{$button-hover-secondary};
+		--text-color: #{$button-hover-text-secondary};
+	}
+}

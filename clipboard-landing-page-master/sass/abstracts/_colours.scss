@@ -1,0 +1,13 @@
+$neutral-dark: hsl(210, 10%, 33%);
+$neutral-light: hsl(201, 11%, 66%);
+
+// buttons
+$button-primary: hsl(171, 66%, 44%);
+$button-text-primary: $body-background-color;
+$button-hover-primary: hsla(171, 66%, 44%, 0.5);
+$button-hover-text-primary: $body-background-color;
+
+$button-secondary: hsl(233, 100%, 69%);
+$button-text-secondary: $body-background-color;
+$button-hover-secondary: hsl(233, 100%, 69%, 0.5);
+$button-hover-text-secondary: $body-background-color;

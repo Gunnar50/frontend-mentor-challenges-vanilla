@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+header {
+	picture {
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+.header {
+	@extend %flex-center;
+	flex-direction: column;
+
+	position: absolute;
+	top: 0;
+	padding: var(--size-7);
+	height: 100vh;
+
+	.logo {
+		margin-bottom: var(--size-10);
+	}
+
+	p {
+		margin-top: var(--size-3);
+		margin-bottom: var(--size-8);
+	}
+}
+
+main {
+	margin-top: 100vh;
+	padding: var(--size-7);
+}
