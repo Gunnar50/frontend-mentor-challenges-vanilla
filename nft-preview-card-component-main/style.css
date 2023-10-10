@@ -7,7 +7,84 @@
 	--white: hsl(0, 0%, 100%);
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: "Outfit", sans-serif; /* 300, 400, 600 */
 	font-size: 18px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--neutral-main);
+	color: var(--white);
+}
+
+.flex {
+	display: flex;
+	gap: 5px;
+}
+
+img {
+	display: block;
+}
+
+.card {
+	background-color: var(--neutral-bg);
+	width: 297px;
+	height: 490px;
+	padding: 1.4rem;
+	border-radius: 15px;
+}
+
+.nft {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.card h2 {
+	margin-top: 20px;
+	font-size: 1.25rem;
+}
+
+.card p {
+	font-size: 0.9rem;
+	color: var(--primary);
+	line-height: 1.5;
+}
+
+.price-section {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.9rem;
+	margin-block: 10px;
+}
+
+.price-section .price {
+	color: var(--secondary);
+}
+
+.price-section .days {
+	color: var(--primary);
+}
+
+.card-footer {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 15px;
+	border-top: 1px solid var(--neutral-line);
+	margin-top: 15px;
+}
+
+.card-footer img {
+	width: 30px;
+	height: 30px;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+}
+
+.attribution {
+	margin-top: 100px;
 }
