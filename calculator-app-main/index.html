@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>Frontend Mentor | Calculator app</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script type="module" src="index.js"></script>
+	</head>
+	<body>
+		<div id="calculator" class="container">
+			<div class="heading">
+				<h2>calc</h2>
+				<p>THEME</p>
+			</div>
+			<div class="screen">
+				<div data-previous class="screen-previous">100 +</div>
+				<div data-current class="screen-current">300</div>
+				<div data-result class="screen-result hidden">400</div>
+			</div>
+			<div id="keypad" class="keypad">
+				<button data-number class="key key-7">7</button>
+				<button data-number class="key key-8">8</button>
+				<button data-number class="key key-9">9</button>
+				<button data-delete class="key key-del">DEL</button>
+				<button data-number class="key key-4">4</button>
+				<button data-number class="key key-5">5</button>
+				<button data-number class="key key-6">6</button>
+				<button data-operation class="key key-plus">+</button>
+				<button data-number class="key key-1">1</button>
+				<button data-number class="key key-2">2</button>
+				<button data-number class="key key-3">3</button>
+				<button data-operation class="key key-minus">-</button>
+				<button data-number class="key key-dot">.</button>
+				<button data-number class="key key-0">0</button>
+				<button data-operation class="key key-divide">/</button>
+				<button data-operation class="key key-multiply">x</button>
+				<button data-reset class="key key-reset">RESET</button>
+				<button data-operation class="key key-equals">=</button>
+			</div>
+		</div>
 
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
 </html>

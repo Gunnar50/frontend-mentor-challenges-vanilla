@@ -1,0 +1,122 @@
+:root {
+	--small: 375px;
+	--large: 1440px;
+
+	// Theme 1
+	--main-bg: hsl(222, 26%, 31%);
+	--toggle-bg: hsl(223, 31%, 20%);
+	--screen-bg: hsl(224, 36%, 15%);
+
+	// keys
+	--key-bg: hsl(225, 21%, 49%);
+	--key-shadow: hsl(224, 28%, 35%);
+	--red: hsl(6, 63%, 50%); // key bg, toggle
+	--dark-red: hsl(6, 70%, 34%); // key shadow
+	--light-orange: hsl(30, 25%, 89%); // key bg
+	--orange: hsl(28, 16%, 65%); //key shadow
+
+	// text
+	--dark-blue: hsl(221, 14%, 31%);
+	--white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: "League Spartan", sans-serif;
+}
+
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+body {
+	font-size: 32px;
+}
+
+.hidden {
+	display: none;
+}
+
+.keypad {
+	max-width: 21rem;
+	background-color: var(--toggle-bg);
+	padding: 1rem;
+	border-radius: 10px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(4, minmax(4rem, 6rem));
+	grid-template-rows: repeat(5, 4rem);
+	// display: flex;
+	// flex-wrap: wrap;
+	gap: 15px;
+	.key {
+		--_button-text-color: var(--button-text-color, var(--dark-blue));
+		--_button-bg-color: var(--button-bg-color, var(--white));
+		--_button-shadow-color: var(--button-shadow-color, var(--orange));
+
+		cursor: pointer;
+		padding: 1rem;
+		padding-top: 1.4rem;
+		border: 0;
+		border-radius: 5px;
+		font-size: inherit;
+		color: var(--_button-text-color);
+		background: var(--_button-bg-color);
+		box-shadow: 0 4px 0 var(--_button-shadow-color);
+		&.key-del {
+			--button-text-color: var(--white);
+			--button-bg-color: var(--key-bg);
+			--button-shadow-color: var(--key-shadow);
+			font-size: 20px;
+		}
+		&.key-reset {
+			--button-text-color: var(--white);
+			--button-bg-color: var(--key-bg);
+			--button-shadow-color: var(--key-shadow);
+			font-size: 20px;
+			grid-column: 1 / 3;
+		}
+		&.key-equals {
+			--button-text-color: var(--white);
+			--button-bg-color: var(--red);
+			--button-shadow-color: var(--dark-red);
+			font-size: 20px;
+			letter-spacing: -1px;
+			grid-column: 3 / 5;
+		}
+	}
+}
+
+.container {
+	--_bgcolor: var(--bgcolor, var(--screen-bg));
+	--_text-color: var(--text-color, var(--white));
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.screen {
+	--_bgcolor: var(--bgcolor, var(--screen-bg));
+	--_text-color: var(--text-color, var(--white));
+
+	max-width: 21rem;
+	text-align: right;
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: var(--_bgcolor);
+	color: var(--_text-color);
+}
+
+.heading {
+	display: flex;
+}
