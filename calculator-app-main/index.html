@@ -22,16 +22,24 @@
 		<link rel="stylesheet" href="style.css" />
 		<script type="module" src="index.js"></script>
 	</head>
-	<body>
+	<body class="theme1">
 		<div id="calculator" class="container">
 			<div class="heading">
 				<h2>calc</h2>
-				<p>THEME</p>
+
+				<div class="theme">
+					<p>THEME</p>
+					<div>
+						<label>1<input name="theme" type="radio" checked /></label>
+						<label>2<input name="theme" type="radio" /></label>
+						<label>3<input name="theme" type="radio" /></label>
+					</div>
+				</div>
 			</div>
 			<div class="screen">
-				<div data-previous class="screen-previous">100 +</div>
-				<div data-current class="screen-current">300</div>
-				<div data-result class="screen-result hidden">400</div>
+				<div data-previous class="screen-previous"></div>
+				<div data-current class="screen-current">0</div>
+				<div data-result class="screen-result"></div>
 			</div>
 			<div id="keypad" class="keypad">
 				<button data-number class="key key-7">7</button>
@@ -51,7 +59,7 @@
 				<button data-operation class="key key-divide">/</button>
 				<button data-operation class="key key-multiply">x</button>
 				<button data-reset class="key key-reset">RESET</button>
-				<button data-operation class="key key-equals">=</button>
+				<button data-equals class="key key-equals">=</button>
 			</div>
 		</div>
 
