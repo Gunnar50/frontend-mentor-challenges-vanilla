@@ -62,7 +62,7 @@ button {
 }
 
 .container {
-  max-width: 50rem;
+  max-width: 60rem;
   margin-inline: auto;
 }
 
@@ -100,6 +100,11 @@ input[type=number] {
   -webkit-appearance: textfield;
      -moz-appearance: textfield;
           appearance: textfield;
+}
+
+.inputs-container {
+  flex: 1;
+  padding: 1rem;
 }
 
 .tip {
@@ -146,6 +151,7 @@ input[type=number] {
 }
 
 .results-container {
+  flex: 1;
   margin-top: 2rem;
   padding: 1.5rem;
   background-color: var(--secondary-bg);
@@ -163,4 +169,31 @@ input[type=number] {
 .results-container button:disabled {
   cursor: auto;
   background-color: var(--button-disabled);
+}
+
+@media screen and (min-width: 668px) {
+  .card-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .results-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: 20px;
+  }
+  .results-container button[data-reset] {
+    margin-top: auto;
+  }
+  .result-flex span {
+    font-size: 2.5rem;
+  }
+  .tip .tip-buttons {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */
