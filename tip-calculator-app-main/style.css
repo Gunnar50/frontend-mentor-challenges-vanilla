@@ -1,0 +1,166 @@
+:root {
+  --primary: hsl(172, 67%, 45%);
+  --main-bg: hsl(185, 41%, 84%);
+  --secondary-bg: hsl(183, 100%, 15%);
+  --main-text: hsl(186, 14%, 43%);
+  --gray-cyan: hsl(184, 14%, 56%);
+  --light-cyan: hsl(189, 41%, 97%);
+  --button-disabled: hsl(183, 80%, 24%);
+  --button-hover: hsl(173, 61%, 77%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--main-text);
+  margin: 0;
+  font-size: 24px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  color: var(--secondary-bg);
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0.4rem 0;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-top: -5px;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: inherit;
+  transition: all 100ms ease;
+}
+
+.container {
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+.card-container {
+  background-color: var(--white);
+  width: 100%;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.svg-container {
+  display: flex;
+  height: 3rem;
+  background-color: var(--light-cyan);
+}
+.svg-container img {
+  padding: 1rem;
+  position: absolute;
+}
+
+input {
+  text-align: right;
+  color: var(--secondary-bg);
+  font-size: inherit;
+  border: 0;
+  border-radius: 5px;
+  background-color: inherit;
+  width: 100%;
+}
+input:focus {
+  outline: 2px solid var(--primary);
+}
+
+input[type=number] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+.tip {
+  margin-top: 2rem;
+}
+.tip .tip-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.tip .tip-buttons input {
+  background-color: var(--light-cyan);
+  color: var(--secondary-bg);
+}
+.tip .tip-buttons button {
+  color: var(--light-cyan);
+  background-color: var(--secondary-bg);
+}
+.tip .tip-buttons button:hover {
+  background-color: var(--button-hover);
+  color: var(--secondary-bg);
+}
+.tip .tip-buttons button:focus {
+  background-color: var(--primary);
+  color: var(--secondary-bg);
+}
+
+.people {
+  margin-top: 2rem;
+}
+
+.result-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.result-flex h3 {
+  color: var(--light-cyan);
+}
+.result-flex span {
+  color: var(--primary);
+  font-size: 2.1rem;
+}
+
+.results-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--secondary-bg);
+  border-radius: 20px;
+}
+.results-container button {
+  margin-top: 2rem;
+  background-color: var(--primary);
+  color: var(--secondary-bg);
+}
+.results-container button:hover {
+  background-color: var(--button-hover);
+  color: var(--secondary-bg);
+}
+.results-container button:disabled {
+  cursor: auto;
+  background-color: var(--button-disabled);
+}/*# sourceMappingURL=style.css.map */
